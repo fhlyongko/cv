@@ -2,8 +2,7 @@
  "meta": {
   "orcid": "0000-0001-8783-2237",
   "source": "Crossref (ORCID 필터) 2026-07-31 확인",
-  "note": "인용수는 Crossref 기준. Google Scholar 집계와 다를 수 있음.",
-  "index_note": "색인 등급은 2026-07-31에 개별 확인한 것만 표기했습니다. 확인하지 못한 국제 학술지는 'SSCI/Scopus'로 단정하지 않고 '국제지'로 두었습니다. 정확한 등급은 Clarivate Master Journal List와 Scopus Source List에서 확인이 필요합니다."
+  "note": "인용수는 Crossref 기준. Google Scholar 집계와 다를 수 있음."
  },
  "items": [
   {
@@ -24,9 +23,9 @@
    "j": "Journal of Education and e-Learning Research",
    "v": "13(2)",
    "d": "10.20448/jeelr.v13i2.8661",
-   "idx": "국제지",
+   "idx": "Scopus",
    "c": 0,
-   "v_": "미확인"
+   "v_": "확인"
   },
   {
    "y": 2026,
@@ -35,9 +34,9 @@
    "j": "International Journal of Evaluation and Research in Education",
    "v": "15(1)",
    "d": "10.11591/ijere.v15i1.35223",
-   "idx": "국제지",
+   "idx": "Scopus",
    "c": 0,
-   "v_": "미확인"
+   "v_": "확인"
   },
   {
    "y": 2026,
@@ -46,9 +45,9 @@
    "j": "International Journal of Evaluation and Research in Education",
    "v": "15(1)",
    "d": "10.11591/ijere.v15i1.35461",
-   "idx": "국제지",
+   "idx": "Scopus",
    "c": 0,
-   "v_": "미확인"
+   "v_": "확인"
   },
   {
    "y": 2026,
@@ -57,9 +56,9 @@
    "j": "Journal of Education and Learning (EduLearn)",
    "v": "20(3)",
    "d": "10.11591/edulearn.v20i3.25169",
-   "idx": "국제지",
+   "idx": "Scopus",
    "c": 0,
-   "v_": "미확인"
+   "v_": "확인"
   },
   {
    "y": 2026,
@@ -68,9 +67,9 @@
    "j": "Journal of Curriculum and Teaching",
    "v": "15(2), 284",
    "d": "10.5430/jct.v15n2p284",
-   "idx": "국제지",
+   "idx": "Scopus",
    "c": 0,
-   "v_": "미확인"
+   "v_": "확인"
   },
   {
    "y": 2026,
@@ -79,9 +78,9 @@
    "j": "Journal of Educational and Social Research",
    "v": "16(1)",
    "d": "10.36941/jesr-2026-0241",
-   "idx": "국제지",
+   "idx": "Scopus",
    "c": 1,
-   "v_": "미확인"
+   "v_": "확인"
   },
   {
    "y": 2026,
@@ -90,9 +89,9 @@
    "j": "International Journal of Information and Education Technology",
    "v": "16(6)",
    "d": "10.18178/ijiet.2026.16.6.2613",
-   "idx": "국제지",
+   "idx": "Scopus",
    "c": 0,
-   "v_": "미확인"
+   "v_": "확인"
   },
   {
    "y": 2026,
@@ -112,9 +111,9 @@
    "j": "Online Journal of Communication and Media Technologies",
    "v": "15(4)",
    "d": "10.30935/ojcmt/17545",
-   "idx": "국제지",
+   "idx": "Scopus",
    "c": 2,
-   "v_": "미확인"
+   "v_": "확인"
   },
   {
    "y": 2025,
@@ -123,9 +122,9 @@
    "j": "Journal of Multilingual and Multicultural Development",
    "v": "46(9)",
    "d": "10.1080/01434632.2024.2314659",
-   "idx": "국제지",
+   "idx": "Scopus",
    "c": 5,
-   "v_": "미확인"
+   "v_": "확인"
   },
   {
    "y": 2025,
@@ -156,9 +155,9 @@
    "j": "LLT Journal: A Journal on Language and Language Teaching",
    "v": "28(2)",
    "d": "10.24071/llt.v28i2.11518",
-   "idx": "국제지",
+   "idx": "Scopus",
    "c": 0,
-   "v_": "미확인"
+   "v_": "확인"
   },
   {
    "y": 2024,
@@ -167,9 +166,9 @@
    "j": "Online Journal of Communication and Media Technologies",
    "v": "14(2)",
    "d": "10.30935/ojcmt/14195",
-   "idx": "국제지",
+   "idx": "Scopus",
    "c": 40,
-   "v_": "미확인"
+   "v_": "확인"
   },
   {
    "y": 2024,
@@ -178,9 +177,9 @@
    "j": "Online Journal of Communication and Media Technologies",
    "v": "14(3)",
    "d": "10.30935/ojcmt/14711",
-   "idx": "국제지",
+   "idx": "Scopus",
    "c": 22,
-   "v_": "미확인"
+   "v_": "확인"
   },
   {
    "y": 2024,
@@ -189,9 +188,9 @@
    "j": "Contemporary Educational Technology",
    "v": "16(4)",
    "d": "10.30935/cedtech/15218",
-   "idx": "국제지",
+   "idx": "Scopus",
    "c": 13,
-   "v_": "미확인"
+   "v_": "확인"
   },
   {
    "y": 2024,
@@ -266,9 +265,9 @@
    "j": "European Journal of Educational Research",
    "v": "12(3), 1195",
    "d": "10.12973/eu-jer.12.3.1195",
-   "idx": "국제지",
+   "idx": "Scopus",
    "c": 4,
-   "v_": "미확인"
+   "v_": "확인"
   },
   {
    "y": 2023,
@@ -310,9 +309,9 @@
    "j": "International Journal of Learning, Teaching and Educational Research",
    "v": "20(9)",
    "d": "10.26803/ijlter.20.9.3",
-   "idx": "국제지",
+   "idx": "Scopus",
    "c": 13,
-   "v_": "미확인"
+   "v_": "확인"
   },
   {
    "y": 2020,
