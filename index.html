@@ -17,11 +17,13 @@
   --ssci:#b23b2e; --scopus:#b8860b; --kci:#1f7a44;
 }
 *{box-sizing:border-box;margin:0;padding:0}
+img{max-width:100%;height:auto}
 html{scroll-behavior:smooth;scroll-padding-top:120px}
+html,body{max-width:100%;overflow-x:hidden}
 body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Pretendard","Malgun Gothic",sans-serif;
   color:var(--ink);background:#f4f6f8;line-height:1.65;-webkit-font-smoothing:antialiased;word-break:keep-all}
 .shell{max-width:1180px;margin:0 auto;background:var(--bg);min-height:100vh;
-  box-shadow:0 0 0 1px var(--line)}
+  box-shadow:0 0 0 1px var(--line);overflow:hidden}
 a{color:var(--blue);text-decoration:none}
 a:hover{text-decoration:underline}
 .lbl{font-size:.63rem;letter-spacing:.13em;text-transform:uppercase;color:var(--blue);font-weight:700}
@@ -75,13 +77,16 @@ h1 small{font-size:1.15rem;font-weight:500;color:#9aa6b4;display:block;margin-to
 .btabs a:hover{background:var(--blue-l);text-decoration:none}
 
 /* ── 좌측 도트 레일 ── */
-.rail{position:fixed;left:calc(50% - 640px);top:50%;transform:translateY(-50%);z-index:40;
-  display:flex;flex-direction:column;gap:16px}
-@media(max-width:1340px){.rail{display:none}}
+.rail{position:fixed;left:calc(50% - 620px);top:50%;transform:translateY(-50%);z-index:40;
+  display:flex;flex-direction:column;gap:16px;align-items:flex-end}
+/* 점(9px)과 왼쪽으로 뻗는 라벨(최대 74px)이 들어갈 폭이 확보될 때만 표시한다.
+   1180(카드) + 2×(30 여백 + 9 점 + 74 라벨 + 12 화면여백) = 1430 */
+@media(max-width:1430px){.rail{display:none}}
 .rail a{width:9px;height:9px;border-radius:50%;background:#c8ced6;position:relative;display:block}
 .rail a.on{background:var(--blue);box-shadow:0 0 0 4px rgba(26,111,255,.16)}
-.rail a span{position:absolute;left:18px;top:-5px;font-size:.72rem;color:var(--blue);
-  white-space:nowrap;opacity:0;transition:opacity .15s;font-weight:600}
+.rail a span{position:absolute;right:18px;top:-5px;font-size:.72rem;color:var(--blue);
+  white-space:nowrap;opacity:0;transition:opacity .15s;font-weight:600;
+  text-align:right;pointer-events:none}
 .rail a.on span,.rail a:hover span{opacity:1}
 
 /* ── 본문 ── */
@@ -137,17 +142,19 @@ section{margin-bottom:34px}
 .ix.scopus{color:var(--scopus);border-color:var(--scopus);background:#fdf8e9}
 .ix.kci{color:var(--kci);border-color:var(--kci);background:#eef8f1}
 .ix.intl{color:#4a5560;border-color:#b8c0c9;background:#f5f7f9}
-.pub .cit{font-size:.88rem;line-height:1.6}
+.pub .cit{font-size:.88rem;line-height:1.6;overflow-wrap:anywhere}
 .pub .cit b{font-weight:800}
 .pub .cit i{color:var(--ink2)}
-.pub .ex{margin-top:4px;display:flex;gap:9px;font-size:.72rem;align-items:center}
+.pub .ex{margin-top:4px;display:flex;gap:9px;font-size:.72rem;align-items:center;
+  flex-wrap:wrap;overflow-wrap:anywhere}
 .pub .cn{color:var(--ssci)}
 .filt{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px}
 .filt button{border:1px solid var(--line);background:#fff;padding:5px 13px;font-size:.79rem;
   cursor:pointer;color:var(--ink2);font-family:inherit}
 .filt button.on{background:var(--blue);color:#fff;border-color:var(--blue)}
 
-table{width:100%;border-collapse:collapse;font-size:.86rem}
+table{width:100%;border-collapse:collapse;font-size:.86rem;table-layout:fixed}
+td,th{overflow-wrap:anywhere}
 th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line2);vertical-align:top}
 th{background:#fafbfc;font-size:.75rem;color:var(--mute);font-weight:700;
   letter-spacing:.06em;text-transform:uppercase;width:130px}
