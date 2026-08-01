@@ -2,7 +2,8 @@
  "meta": {
   "orcid": "0000-0001-8783-2237",
   "source": "Crossref (ORCID 필터) 2026-07-31 확인",
-  "note": "인용수는 Crossref 기준. Google Scholar 집계와 다를 수 있음."
+  "note": "인용수는 Crossref 기준. Google Scholar 집계와 다를 수 있음.",
+  "scope": "2021년 이후 발표 논문만 수록"
  },
  "items": [
   {
@@ -311,72 +312,6 @@
    "d": "10.26803/ijlter.20.9.3",
    "idx": "Scopus",
    "c": 13,
-   "v_": "확인"
-  },
-  {
-   "y": 2020,
-   "t": "English language learners' bilingualism and biliteracy development in a Korean heritage school in the US",
-   "a": "Lee, Y.-J.",
-   "j": "교육연구 (Educational Research Institute)",
-   "v": "40(1), 17",
-   "d": "10.34245/jed.40.1.17",
-   "idx": "KCI",
-   "c": 0,
-   "v_": "확인"
-  },
-  {
-   "y": 2019,
-   "t": "Elementary preservice teachers' ESL field experiences to teach English language learners in the US",
-   "a": "Lee, Y.-J., & Davis, R.",
-   "j": "English Language Teaching (영어교육연구)",
-   "v": "31(2), 3",
-   "d": "10.17936/pkelt.2019.31.2.003",
-   "idx": "KCI",
-   "c": 0,
-   "v_": "확인"
-  },
-  {
-   "y": 2019,
-   "t": "Pre-service teachers' self-efficacy through ESL microteaching experiences in a US teacher education program",
-   "a": "Lee, Y.-J., & Davis, R.",
-   "j": "Secondary English Education (중등영어교육)",
-   "v": "12(1), 153",
-   "d": "10.20487/kasee.12.1.201902.153",
-   "idx": "KCI",
-   "c": 1,
-   "v_": "확인"
-  },
-  {
-   "y": 2019,
-   "t": "Content analysis of career English textbooks: From a perspective of infusion of career education and English education",
-   "a": "Cho, H.-S., & Lee, Y.-J.",
-   "j": "문화와융합 (The Korean Society of Culture and Convergence)",
-   "v": "41(5), 877",
-   "d": "10.33645/cnc.2019.10.41.5.877",
-   "idx": "KCI",
-   "c": 0,
-   "v_": "확인"
-  },
-  {
-   "y": 2018,
-   "t": "Can flipped learning benefit English language teaching ESL teacher education: What do we know, and where do we go?",
-   "a": "Lee, Y.-J., & Davis, R.",
-   "j": "문화와융합 (The Korean Society of Culture and Convergence)",
-   "v": "40(2), 673",
-   "d": "10.33645/cnc.2018.04.40.2.673",
-   "idx": "KCI",
-   "c": 0,
-   "v_": "확인"
-  },
-  {
-   "y": 2017,
-   "t": "Literature review of microteaching activity in teacher education programs: Focusing on pre-service teachers' self-efficacy beliefs",
-   "a": "Lee, Y.-J., & Davis, R.",
-   "j": "문화와융합 (The Korean Society of Culture and Convergence)",
-   "v": "39(4), 203",
-   "d": "10.33645/cnc.2017.08.39.4.203",
-   "idx": "KCI",
-   "c": 1,
    "v_": "확인"
   }
  ]
