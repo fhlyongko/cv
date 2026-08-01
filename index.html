@@ -60,11 +60,6 @@ h1 small{font-size:1.15rem;font-weight:500;color:#9aa6b4;display:block;margin-to
 .metric div:last-child{border-right:none}
 .metric b{display:block;font-size:1.5rem;color:#fff;line-height:1.1}
 .metric span{font-size:.58rem;letter-spacing:.12em;color:#8d97a3;text-transform:uppercase}
-.hact{display:grid;grid-template-columns:1fr 1fr;gap:0;margin-top:12px;border:1px solid rgba(255,255,255,.16)}
-.hact button{background:transparent;border:none;border-right:1px solid rgba(255,255,255,.16);
-  color:#c6cfd9;padding:10px;font-size:.78rem;letter-spacing:.08em;cursor:pointer;font-family:inherit;font-weight:700}
-.hact button:last-child{border-right:none}
-.hact button.on{background:var(--blue);color:#fff}
 
 /* ── 고정 바 ── */
 .bar{position:sticky;top:0;z-index:60;background:#fff;border-top:2px solid var(--blue);
@@ -162,12 +157,8 @@ ul.pl li::before{content:"";position:absolute;left:0;top:14px;width:6px;height:1
 .note{background:var(--blue-l);border-left:3px solid var(--blue);padding:11px 15px;
   font-size:.81rem;color:var(--ink2);margin-top:13px}
 footer{background:var(--dark);color:#8d97a3;padding:24px 30px;font-size:.79rem}
-.en-only{display:none}
-body.en .ko-only{display:none}
-body.en .en-only{display:block}
-body.en span.en-only,body.en small.en-only{display:inline}
 @media(max-width:640px){h1{font-size:1.9rem}header,main,footer{padding:22px 16px}}
-@media print{.bar,.rail,.filt,.hact{display:none}.shell{box-shadow:none}}
+@media print{.bar,.rail,.filt{display:none}.shell{box-shadow:none}}
 </style>
 </head>
 <body>
@@ -218,10 +209,6 @@ body.en span.en-only,body.en small.en-only{display:inline}
           <a href="https://orcid.org/0000-0001-8783-2237" target="_blank" rel="noopener" style="color:#5b9bff">ORCID 0000-0001-8783-2237</a> &nbsp;·&nbsp;
           <a href="https://scholar.google.com/citations?user=Jzv1a7MAAAAJ&hl=en" target="_blank" rel="noopener" style="color:#5b9bff">Google Scholar</a></div>
       </div>
-      <div class="hact">
-        <button id="bko" class="on" onclick="setLang('ko')">KOR</button>
-        <button id="ben" onclick="setLang('en')">ENG</button>
-      </div>
     </div>
   </div>
 </header>
@@ -243,16 +230,11 @@ body.en span.en-only,body.en small.en-only{display:inline}
 <section id="overview">
   <div class="shead"><h2>연구 개요</h2><p>Research Overview</p></div>
   <div class="box"><div class="boxb">
-    <p class="ko-only" style="color:var(--ink2);font-size:.9rem">
+    <p style="color:var(--ink2);font-size:.9rem">
       영어교육과 인공지능이 만나는 지점을 연구합니다. 대학생과 예비교사가 생성형 AI를 어떻게
       받아들이고 실제 학습·수업에서 어떻게 쓰는지를 설문·사례연구·혼합방법으로 살펴 왔습니다.
       미국에서 이중언어 교육과 ESOL을 공부한 배경을 바탕으로, 영어 매개 강의(EMI)와
       다문화 학습자 지원도 함께 다룹니다.</p>
-    <p class="en-only" style="color:var(--ink2);font-size:.9rem">
-      My research sits where English language education meets artificial intelligence — how
-      university students and pre-service teachers perceive generative AI and how they actually
-      use it in learning and teaching. Trained in bilingual education and ESOL in the United
-      States, I also work on English-medium instruction and support for multilingual learners.</p>
   </div></div>
   <div class="mini" style="margin-top:14px">
     <div class="mcard"><h4>AI 리터러시</h4><p>대학생·예비교사의 AI 리터러시 수준과 전공별 차이, 선행 학습 경험이 인식에 미치는 영향</p></div>
@@ -335,13 +317,9 @@ body.en span.en-only,body.en small.en-only{display:inline}
 <section id="teaching">
   <div class="shead"><h2>교육</h2><p>Teaching</p></div>
   <div class="box"><div class="boxb">
-    <p class="ko-only" style="font-size:.89rem;color:var(--ink2)">
+    <p style="font-size:.89rem;color:var(--ink2)">
       학부와 대학원에서 영어 능력, 교육공학, 교사 교육 과목을 가르쳐 왔습니다. 현재는
       사림아너스학부에서 자율전공 1학년 학생의 학과 선택 상담과 글로벌 역량 교육을 맡고 있습니다.</p>
-    <p class="en-only" style="font-size:.89rem;color:var(--ink2)">
-      I have taught courses in English language skills, educational technology, and teacher
-      training at both undergraduate and graduate levels. At the School of Sarim-Honors I
-      currently advise first-year open-major students and teach global competence.</p>
   </div></div>
 </section>
 
@@ -438,13 +416,6 @@ document.querySelectorAll('.filt button').forEach(b=>b.onclick=()=>{
   document.querySelectorAll('.filt button').forEach(x=>x.classList.remove('on'));
   b.classList.add('on');filt=b.dataset.f;render();
 });
-function setLang(l){
-  document.body.classList.toggle('en',l==='en');
-  document.documentElement.lang=l;
-  document.getElementById('bko').classList.toggle('on',l==='ko');
-  document.getElementById('ben').classList.toggle('on',l==='en');
-  try{localStorage.setItem('cvlang',l)}catch(e){}
-}
 const rails=[...document.querySelectorAll('.rail a')];
 addEventListener('scroll',()=>{
   let cur=rails[0];
@@ -455,7 +426,6 @@ addEventListener('scroll',()=>{
 fetch('publications.json').then(r=>r.json()).then(d=>{DATA=d;chart();render()})
   .catch(()=>{document.getElementById('publist').innerHTML=
     '<p style="color:var(--mute)">논문 목록을 불러오지 못했습니다.</p>'});
-try{const s=localStorage.getItem('cvlang');if(s)setLang(s)}catch(e){}
 </script>
 </body>
 </html>
