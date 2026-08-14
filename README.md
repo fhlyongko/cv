@@ -1,6 +1,6 @@
 # Yong-Jik Lee, Ph.D. - Academic CV
 
-Assistant Professor, School of Sarim-Honors, Changwon National University
+Assistant Professor at Changwon National University
 
 English Education | AI Literacy | EMI | Global Competence
 
