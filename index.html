@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>이용직 | CV</title>
+<title>이용직 · Yong-Jik Lee, Ph.D. | Academic CV</title>
+<link rel="canonical" href="https://fhlyongko.github.io/cv/">
 <meta name="description" content="이용직 Ph.D. 국립창원대학교 조교수의 학술 CV. AI 리터러시, 생성형 AI와 영어교육, EMI, 글로벌 역량 연구.">
 <meta property="og:title" content="이용직, Ph.D. | 학술 CV">
 <meta property="og:description" content="국립창원대학교 조교수. AI 리터러시·생성형 AI 영어교육·EMI 연구.">
@@ -12,7 +13,7 @@
 <style>
 :root{
   --blue:#1a6fff; --blue-d:#0b3c8c; --blue-l:#e8f0ff;
-  --ink:#111418; --ink2:#3a414a; --mute:#7b838d;
+  --ink:#111418; --ink2:#3a414a; --mute:#626b76;
   --line:#dfe3e8; --line2:#eef1f4; --bg:#fff; --dark:#0f1216;
   --ssci:#b23b2e; --scopus:#b8860b; --kci:#1f7a44;
 }
@@ -23,7 +24,7 @@ html,body{max-width:100%;overflow-x:hidden}
 body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Pretendard","Malgun Gothic",sans-serif;
   color:var(--ink);background:#f4f6f8;line-height:1.65;-webkit-font-smoothing:antialiased;word-break:keep-all}
 .shell{max-width:1180px;margin:0 auto;background:var(--bg);min-height:100vh;
-  box-shadow:0 0 0 1px var(--line);overflow:hidden}
+  box-shadow:0 0 0 1px var(--line);overflow:clip}
 a{color:var(--blue);text-decoration:none}
 a:hover{text-decoration:underline}
 .lbl{font-size:.63rem;letter-spacing:.13em;text-transform:uppercase;color:var(--blue);font-weight:700}
@@ -37,7 +38,7 @@ header{background:var(--dark);color:#fff;padding:34px 30px 30px;
 .photo{width:118px;height:118px;border-radius:50%;flex-shrink:0;object-fit:cover;
   border:3px solid rgba(255,255,255,.22);background:#1e2937;
   box-shadow:0 6px 22px rgba(0,0,0,.4)}
-.hmain{flex:1;min-width:280px}
+.hmain{flex:1;min-width:0;flex-basis:280px;overflow-wrap:anywhere}
 .hmain .eyebrow{font-size:.72rem;letter-spacing:.14em;color:#5b9bff;font-weight:700;margin-bottom:8px}
 h1{font-size:2.5rem;line-height:1.12;letter-spacing:-.02em;margin-bottom:10px}
 h1 small{font-size:1.15rem;font-weight:500;color:#9aa6b4;display:block;margin-top:5px;letter-spacing:0}
@@ -166,20 +167,30 @@ ul.pl li::before{content:"";position:absolute;left:0;top:14px;width:6px;height:1
 footer{background:var(--dark);color:#8d97a3;padding:24px 30px;font-size:.79rem}
 @media(max-width:640px){h1{font-size:1.9rem}header,main,footer{padding:22px 16px}}
 @media print{.bar,.rail,.filt{display:none}.shell{box-shadow:none}}
+
+.skip{position:fixed;top:-60px;left:12px;z-index:100;background:white;padding:10px}.skip:focus{top:10px}
+a:focus-visible,button:focus-visible{outline:3px solid #ffb000;outline-offset:3px}
+.hcell,.box,.cols>*{min-width:0;overflow-wrap:anywhere}
+.btabs{margin-left:0;overflow-x:auto;width:100%}.btabs a{padding:12px 16px}.bar{flex-wrap:wrap}
+.pub>div{min-width:0}.metric a{color:inherit}.rail a{width:14px;height:14px}
+@media(max-width:640px){.hcells{grid-template-columns:1fr}.hcell.wide,.hcell.full{grid-column:auto}.hcell{border-right:0}.bstat{display:none}.btabs a{padding:12px}.pub{padding:10px;gap:8px}th{width:84px}th,td{padding:8px}.cstat{display:flex}.cstat div{flex:1}.metric span{font-size:.68rem}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+@media print{html,body,.shell{overflow:visible;background:white}.bar,.rail,.filt,.skip{display:none!important}.pub,.mcard,.tl .row{break-inside:avoid}.cols,.mini{display:block}.mcard{margin-bottom:10px}header,footer{background:white;color:#111}header *{color:#111!important}main{padding:15px}.hgrid{display:block}.hbox,.metric{display:none}}
 </style>
 </head>
 <body>
-<div class="rail">
+<a class="skip" href="#overview">본문 바로가기</a>
+<nav class="rail" aria-label="전체 목차">
   <a href="#overview" class="on"><span>연구 개요</span></a>
   <a href="#education"><span>학력</span></a>
   <a href="#positions"><span>경력</span></a>
   <a href="#publications"><span>논문</span></a>
-  <a href="#presentations"><span>예정 발표</span></a>
-  <a href="#books"><span>저서</span></a>
+  <a href="#presentations"><span>학술발표</span></a>
+  <a href="#books"><span>전자책</span></a>
   <a href="#teaching"><span>교육</span></a>
   <a href="#service"><span>학술 활동</span></a>
   <a href="#contact"><span>연락</span></a>
-</div>
+</nav>
 
 <div class="shell">
 <header>
@@ -201,9 +212,9 @@ footer{background:var(--dark);color:#8d97a3;padding:24px 30px;font-size:.79rem}
         <div class="row">Academic Profile</div>
       </div>
       <div class="metric">
-        <div><b>28</b><span>Papers</span></div>
-        <div><b>22</b><span>국제</span></div>
-        <div><b>Live</b><span>Scholar</span></div>
+        <div><b data-count="all">28</b><span>Papers</span></div>
+        <div><b data-count="intl">22</b><span>국제</span></div>
+        <div><b><a href="https://scholar.google.com/citations?user=Jzv1a7MAAAAJ&amp;hl=en" target="_blank" rel="noopener">↗</a></b><span>Scholar 프로필</span></div>
       </div>
     </div>
     <div>
@@ -211,8 +222,8 @@ footer{background:var(--dark);color:#8d97a3;padding:24px 30px;font-size:.79rem}
         <div class="hcell"><span class="k">연구 축 1</span>AI 리터러시</div>
         <div class="hcell"><span class="k">연구 축 2</span>생성형 AI와 영어교육</div>
         <div class="hcell"><span class="k">연구 축 3</span>EMI · 다문화 교육</div>
-        <div class="hcell wide"><span class="k">근거 자료</span>ORCID 검증 논문 28편(2021년 이후) · 저서 3종 · 국제 공동연구</div>
-        <div class="hcell"><span class="k">발표 기간</span>2021 – 2026</div>
+        <div class="hcell wide"><span class="k">근거 자료</span>수록 논문 <span data-count="all">28</span>편(2021년 이후) · 공개 전자책 3종 · 국제 공동연구</div>
+        <div class="hcell"><span class="k">논문 수록 기간</span>2021 – 2026</div>
         <div class="hcell full"><span class="k">연락</span>fhlyongko@gmail.com &nbsp;·&nbsp;
           <a href="https://orcid.org/0000-0001-8783-2237" target="_blank" rel="noopener" style="color:#5b9bff">ORCID 0000-0001-8783-2237</a> &nbsp;·&nbsp;
           <a href="https://scholar.google.com/citations?user=Jzv1a7MAAAAJ&hl=en" target="_blank" rel="noopener" style="color:#5b9bff">Google Scholar</a></div>
@@ -223,16 +234,17 @@ footer{background:var(--dark);color:#8d97a3;padding:24px 30px;font-size:.79rem}
 
 <div class="bar">
   <div class="bstat">
-    <div><b>28</b><span>논문</span></div>
-    <div><b>3</b><span>저서</span></div>
-    <div><b>Live</b><span>Scholar</span></div>
+    <div><b data-count="all">28</b><span>논문</span></div>
+    <div><b>3</b><span>전자책</span></div>
+    <div><b><a href="https://scholar.google.com/citations?user=Jzv1a7MAAAAJ&amp;hl=en" target="_blank" rel="noopener">↗</a></b><span>Scholar 프로필</span></div>
   </div>
-  <div class="btabs">
+  <nav class="btabs" aria-label="주요 메뉴">
+    <a href="#overview">개요</a><a href="#education">학력</a><a href="#positions">경력</a>
     <a href="#publications">연구</a>
-    <a href="#presentations">예정 발표</a>
-    <a href="#teaching">교육</a>
-    <a href="#service">활동</a>
-  </div>
+    <a href="#presentations">학술발표</a>
+    <a href="#books">전자책</a><a href="#teaching">교육</a>
+    <a href="#service">활동</a><a href="#contact">연락</a>
+  </nav>
 </div>
 
 <main>
@@ -241,7 +253,7 @@ footer{background:var(--dark);color:#8d97a3;padding:24px 30px;font-size:.79rem}
   <div class="box"><div class="boxb">
     <p style="color:var(--ink2);font-size:.9rem">
       영어교육과 인공지능이 만나는 지점을 연구합니다. 대학생과 예비교사가 생성형 AI를 어떻게
-      받아들이고 실제 학습·수업에서 어떻게 쓰는지를 설문·사례연구·혼합방법으로 살펴 왔습니다.
+      받아들이고 실제 학습·수업에서 어떻게 쓰는지를 설문·사례연구·혼합방법으로 살펴왔습니다.
       미국에서 이중언어 교육과 ESOL을 공부한 배경을 바탕으로, 영어 매개 강의(EMI)와
       다문화 학습자 지원도 함께 다룹니다.</p>
   </div></div>
@@ -282,11 +294,12 @@ footer{background:var(--dark);color:#8d97a3;padding:24px 30px;font-size:.79rem}
 </section>
 
 <section id="positions">
-  <div class="shead"><h2>경력</h2><p>Academic Positions · 발표 논문의 소속 표기 기준</p></div>
+  <div class="shead"><h2>경력</h2><p>Academic Appointments and Affiliations · 이전 소속은 발표 논문의 표기 기준</p></div>
   <div class="box"><div class="boxb tl">
     <div class="row"><div class="yr">현재</div><div>
       <div class="ttl"><b>국립창원대학교</b> 조교수</div>
       <div class="sm">Assistant Professor, Changwon National University</div></div></div>
+    <div class="row"><div class="yr">2024</div><div><div class="ttl"><b>국립공주대학교</b></div><div class="sm">Kongju National University · 2024년 발표 논문 소속</div></div></div>
     <div class="row"><div class="yr">2023–24</div><div>
       <div class="ttl"><b>전남대학교</b> 교육문제연구소</div>
       <div class="sm">The Institute of Educational Research, Chonnam National University</div></div></div>
@@ -297,38 +310,66 @@ footer{background:var(--dark);color:#8d97a3;padding:24px 30px;font-size:.79rem}
 </section>
 
 <section id="publications">
-  <div class="shead"><h2>학술 논문</h2><p>Peer-Reviewed Journal Articles · 2021년 이후 · ORCID 0000-0001-8783-2237 검증 · Crossref 2026-07-31</p></div>
+  <div class="shead"><h2>학술 논문</h2><p>Selected Journal Articles · 2021년 이후 수록 목록</p></div>
+  <p class="note" style="margin:0 0 14px">기존 Crossref·ORCID 기반 목록을 수록했습니다. 인용 수는 2026년 7월 31일 저장값이며 실시간 수치가 아닙니다. 최신 집계는 Google Scholar에서 확인할 수 있습니다. 학술지의 최신 색인 등재 여부를 별도로 검증하지 않아 색인별 실적 집계는 표시하지 않습니다.</p>
   <div class="chart">
     <div class="cstat" id="cstat"></div>
     <div class="cbars"><div class="ct">연도별 논문</div><div id="cbars"></div></div>
   </div>
-  <div class="filt" style="margin-top:16px">
-    <button class="on" data-f="all">전체 28</button>
-    <button data-f="intl">국제 22</button>
-    <button data-f="kci">KCI 6</button>
-    <button data-f="cited">인용순</button>
+  <div role="group" aria-label="논문 보기" class="filt" style="margin-top:16px">
+    <button type="button" aria-pressed="true" class="on" data-f="all">전체 28</button>
+    <button type="button" aria-pressed="false" data-f="intl">국제 22</button>
+    <button type="button" aria-pressed="false" data-f="kci">국내 6</button>
+    <button type="button" aria-pressed="false" data-f="cited">저장된 인용 수순</button>
   </div>
-  <div id="publist"></div>
+  <div id="publist" aria-live="polite"><div class="pub"><div class="cit">Sung, S., Davis, R. O., Vincent, J., &amp; Lee, Y.-J. (2026). Email communication in English-medium instruction: Cultural and gender differences in student requests to professors. <i>Education Sciences</i>, 16(1), 96. <a href="https://doi.org/10.3390/educsci16010096" target="_blank" rel="noopener">DOI</a></div></div>
+<div class="pub"><div class="cit">Lee, Y.-J., &amp; Jeong, S.-H. (2026). Generative AI literacy among pre-service teachers: Focusing on physical education majors. <i>Journal of Education and e-Learning Research</i>, 13(2). <a href="https://doi.org/10.20448/jeelr.v13i2.8661" target="_blank" rel="noopener">DOI</a></div></div>
+<div class="pub"><div class="cit">Lee, Y.-J., &amp; Otani, M. (2026). University students' perspectives on integrating generative AI into English language learning. <i>International Journal of Evaluation and Research in Education</i>, 15(1). <a href="https://doi.org/10.11591/ijere.v15i1.35223" target="_blank" rel="noopener">DOI</a></div></div>
+<div class="pub"><div class="cit">Lee, Y.-J., &amp; Jeong, S.-H. (2026). Implementing AI-integrated English writing: University English language learners' writing strategies and perceptions. <i>International Journal of Evaluation and Research in Education</i>, 15(1). <a href="https://doi.org/10.11591/ijere.v15i1.35461" target="_blank" rel="noopener">DOI</a></div></div>
+<div class="pub"><div class="cit">Lee, Y.-J., &amp; Jeong, S.-H. (2026). Understanding AI education perceptions and teaching efficacy among pre-service teachers in Korea. <i>Journal of Education and Learning (EduLearn)</i>, 20(3). <a href="https://doi.org/10.11591/edulearn.v20i3.25169" target="_blank" rel="noopener">DOI</a></div></div>
+<div class="pub"><div class="cit">Lee, Y.-J., &amp; Jeong, S.-H. (2026). Examining artificial intelligence (AI) literacy among first-year students in Korean higher education. <i>Journal of Curriculum and Teaching</i>, 15(2), 284. <a href="https://doi.org/10.5430/jct.v15n2p284" target="_blank" rel="noopener">DOI</a></div></div>
+<div class="pub"><div class="cit">Lee, Y.-J., &amp; Jeong, S.-H. (2026). Exploring university ELLs' AI literacy: An exploratory descriptive study. <i>Journal of Educational and Social Research</i>, 16(1). <a href="https://doi.org/10.36941/jesr-2026-0241" target="_blank" rel="noopener">DOI</a></div></div>
+<div class="pub"><div class="cit">Lee, Y.-J., &amp; Choi, H.-C. (2026). Disciplinary differences in university students' AI adoption: A technology acceptance model approach. <i>International Journal of Information and Education Technology</i>, 16(6). <a href="https://doi.org/10.18178/ijiet.2026.16.6.2613" target="_blank" rel="noopener">DOI</a></div></div>
+<div class="pub"><div class="cit">Lee, Y.-J., &amp; Choi, J.-I. (2026). Exploring AI literacy across academic disciplines: University students' knowledge, attitudes, and learning challenges. <i>Journal of the Korea Academia-Industrial Cooperation Society</i>, 27(1), 495. <a href="https://doi.org/10.5762/kais.2026.27.1.495" target="_blank" rel="noopener">DOI</a></div></div>
+<div class="pub"><div class="cit">Lee, Y.-J., Davis, R. O., &amp; Choi, J.-I. (2025). Integrating generative AI into EFL writing: University students' strategies and perceptions. <i>Online Journal of Communication and Media Technologies</i>, 15(4). <a href="https://doi.org/10.30935/ojcmt/17545" target="_blank" rel="noopener">DOI</a></div></div>
+<div class="pub"><div class="cit">Yilmaz, T., Li, S., &amp; Lee, Y.-J. (2025). A multilingualism-as-resource approach in a graduate-level English-medium instruction (EMI) program at a Korean university. <i>Journal of Multilingual and Multicultural Development</i>, 46(9). <a href="https://doi.org/10.1080/01434632.2024.2314659" target="_blank" rel="noopener">DOI</a></div></div>
+<div class="pub"><div class="cit">Lee, Y.-J., &amp; Davis, R. O. (2025). Assessing the impact of prior coding and artificial intelligence learning on non-computing majors' perception of AI in a university context. <i>Information</i>, 16(4), 277. <a href="https://doi.org/10.3390/info16040277" target="_blank" rel="noopener">DOI</a></div></div>
+<div class="pub"><div class="cit">Davis, R. O., Vincent, J., Yang, E. B., Lee, Y. J., &amp; Lee, J. H. (2025). The exploration of combining hologram-like images and pedagogical agent gesturing. <i>Information</i>, 16(5), 350. <a href="https://doi.org/10.3390/info16050350" target="_blank" rel="noopener">DOI</a></div></div>
+<div class="pub"><div class="cit">Lee, Y. J., &amp; Otani, M. (2025). EFL university students' motivation, cognitive load, and satisfaction with using GenAI for English learning. <i>LLT Journal: A Journal on Language and Language Teaching</i>, 28(2). <a href="https://doi.org/10.24071/llt.v28i2.11518" target="_blank" rel="noopener">DOI</a></div></div>
+<div class="pub"><div class="cit">Lee, Y.-J., Davis, R. O., &amp; Lee, S. O. (2024). University students' perceptions of artificial intelligence-based tools for English writing courses. <i>Online Journal of Communication and Media Technologies</i>, 14(2). <a href="https://doi.org/10.30935/ojcmt/14195" target="_blank" rel="noopener">DOI</a></div></div>
+<div class="pub"><div class="cit">Lee, Y.-J., Oh, J., &amp; Hong, C. (2024). Exploratory research on understanding university students' artificial intelligence literacy in a Korean university. <i>Online Journal of Communication and Media Technologies</i>, 14(3). <a href="https://doi.org/10.30935/ojcmt/14711" target="_blank" rel="noopener">DOI</a></div></div>
+<div class="pub"><div class="cit">Lee, Y. J., &amp; Davis, R. O. (2024). A case study of implementing generative AI in university's general English courses. <i>Contemporary Educational Technology</i>, 16(4), ep533. <a href="https://doi.org/10.30935/cedtech/15218" target="_blank" rel="noopener">DOI</a></div></div>
+<div class="pub"><div class="cit">Davis, R. O., Lee, Y.-J., Vincent, J., &amp; Wan, L. (2024). Exploring gesture frequencies and images in multimedia environments with pedagogical agents. <i>Journal of Computer Assisted Learning</i>, 40(6). <a href="https://doi.org/10.1111/jcal.13053" target="_blank" rel="noopener">DOI</a></div></div>
+<div class="pub"><div class="cit">Kim, H. J., Yilmaz, T., &amp; Lee, Y.-J. (2024). Reimagining raciolinguistic ideologies through an analysis of localized language-in-education policies in Turkey and Korea. <i>Current Issues in Language Planning</i>, 25(4). <a href="https://doi.org/10.1080/14664208.2024.2315682" target="_blank" rel="noopener">DOI</a></div></div>
+<div class="pub"><div class="cit">Kim, H. J., Li, Y., &amp; Lee, Y.-J. (2024). Rethinking linguistic capitals and asset-based language learning: An examination of bilingual Korean-Chinese instruction for international students in South Korea. <i>Language and Education</i>, 38(2). <a href="https://doi.org/10.1080/09500782.2023.2221221" target="_blank" rel="noopener">DOI</a></div></div>
+<div class="pub"><div class="cit">Li, Y., &amp; Lee, Y.-J. (2024). Exploring Korean university students' perceptions of artificial intelligence (AI) education. <i>Journal of the Korea Academia-Industrial Cooperation Society</i>, 25(3), 251. <a href="https://doi.org/10.5762/kais.2024.25.3.251" target="_blank" rel="noopener">DOI</a></div></div>
+<div class="pub"><div class="cit">Li, Y., &amp; Lee, Y.-J. (2024). Case study on pre-service teachers' perception of AI education and AI teaching efficacy at a Chinese university. <i>Journal of AI Humanities</i>, 16. <a href="https://doi.org/10.46397/jaih.16.2" target="_blank" rel="noopener">DOI</a></div></div>
+<div class="pub"><div class="cit">Davis, R. O., &amp; Lee, Y. J. (2024). Prompt: ChatGPT, create my course, please! <i>Education Sciences</i>, 14(1), 24. <a href="https://doi.org/10.3390/educsci14010024" target="_blank" rel="noopener">DOI</a></div></div>
+<div class="pub"><div class="cit">Yilmaz, T., &amp; Lee, Y.-J. (2023). Pre-service teachers' self-efficacy beliefs in teaching refugee background students at Turkish public schools. <i>European Journal of Educational Research</i>, 12(3), 1195. <a href="https://doi.org/10.12973/eu-jer.12.3.1195" target="_blank" rel="noopener">DOI</a></div></div>
+<div class="pub"><div class="cit">Lee, Y.-J., &amp; Kim, Y. (2023). An exploratory study on international graduate students' experiences of English as a medium of instruction (EMI). <i>Journal of the Korea Academia-Industrial Cooperation Society</i>, 24(5), 81. <a href="https://doi.org/10.5762/kais.2023.24.5.81" target="_blank" rel="noopener">DOI</a></div></div>
+<div class="pub"><div class="cit">Li, Y., &amp; Lee, Y.-J. (2022). Exploring flipped learning experience of pre-service teachers: Focusing on teaching methods and educational technology courses. <i>Journal of the Korea Academia-Industrial Cooperation Society</i>, 23(5), 460. <a href="https://doi.org/10.5762/kais.2022.23.5.460" target="_blank" rel="noopener">DOI</a></div></div>
+<div class="pub"><div class="cit">Li, Y., &amp; Lee, Y.-J. (2022). Exploratory research on bilingual Korean classes for international students: Focusing on beginner level of Korean language learners in a Korean university. <i>교육연구 (Educational Research Institute)</i>, 42(1), 43. <a href="https://doi.org/10.34245/jed.42.1.43" target="_blank" rel="noopener">DOI</a></div></div>
+<div class="pub"><div class="cit">Lee, Y.-J., Davis, R. O., &amp; Li, Y. (2021). International graduate students' experiences of English as a medium of instruction (EMI) courses in a Korean university. <i>International Journal of Learning, Teaching and Educational Research</i>, 20(9). <a href="https://doi.org/10.26803/ijlter.20.9.3" target="_blank" rel="noopener">DOI</a></div></div></div>
 </section>
 
 <section id="presentations">
-  <div class="shead"><h2>예정 학술발표</h2><p>Forthcoming Presentations · 완료된 연구업적과 별도 관리</p></div>
+  <div class="shead"><h2>학술대회 발표 및 일정</h2><p>Conference Presentations and Schedule</p></div>
   <div class="box"><div class="boxb tl">
     <div class="row"><div class="yr">2026.08</div><div>
       <div class="ttl"><b>Balancing Benefits and Risks: Cognitive, Affective, and Ethical Perspectives on Generative AI Use in University EFL Learning</b></div>
-      <div class="sm">The 65th JACET International Convention · Osaka, Japan · Forthcoming presentation</div></div></div>
+      <div class="sm">The 65th JACET International Convention · Osaka, Japan · August 26–28, 2026</div></div></div>
     <div class="row"><div class="yr">2026.09</div><div>
       <div class="ttl"><b>The Development of University Students' GenAI Literacy after an Introductory Artificial Intelligence Course</b></div>
       <div class="sm">WAIE 2026 · Sapporo, Japan · Forthcoming presentation</div></div></div>
     <div class="row"><div class="yr">2026.11</div><div>
       <div class="ttl"><b>University Students' Cognitive and Affective Responses to GenAI-Assisted Language Learning</b></div>
-      <div class="sm">JALT2026 – Nagoya · Nagoya, Japan · Forthcoming presentation</div></div></div>
+      <div class="sm">JALT2026 · Nagoya, Japan · Forthcoming presentation</div></div></div>
   </div></div>
-  <div class="note">예정 발표는 완료 실적·출판물 수·인용 지표에 포함하지 않습니다. 실제 발표가 완료된 뒤 학술대회 프로그램 또는 발표 증빙을 확인하여 완료 실적으로 전환합니다.</div>
+  <div class="note">학술대회 발표와 학술지 논문은 구분하여 제시합니다. 향후 일정에는 “Forthcoming presentation”을 표시하며, 날짜가 지난 항목의 발표 완료 여부는 날짜만으로 판단하지 않습니다.</div>
 </section>
 
 <section id="books">
-  <div class="shead"><h2>저서</h2><p>Books · 공개 전자책</p></div>
+  <div class="shead"><h2>공개 전자책</h2><p>Open Educational Resources · Online Handbooks</p></div>
   <div class="mini">
     <div class="mcard"><h4>대학원생을 위한 학술 논문 작성</h4>
       <p>글로벌 역량 증진 · 16장 3부<br><a href="https://fhlyongko.github.io/korean-thesis-writing-ebook/" target="_blank" rel="noopener">공개 링크 →</a></p></div>
@@ -349,7 +390,7 @@ footer{background:var(--dark);color:#8d97a3;padding:24px 30px;font-size:.79rem}
 </section>
 
 <section id="service">
-  <div class="shead"><h2>학술 활동</h2><p>Professional Service &amp; Collaboration</p></div>
+  <div class="shead"><h2>학술 활동</h2><p>Research Collaboration and Publication Venues</p></div>
   <div class="cols">
     <div class="box">
       <div class="boxh">국제 공동연구 협력</div>
@@ -364,12 +405,12 @@ footer{background:var(--dark);color:#8d97a3;padding:24px 30px;font-size:.79rem}
     <div class="box">
       <div class="boxh">주요 게재 학술지</div>
       <div class="boxb"><ul class="pl">
-        <li>Journal of Multilingual and Multicultural Development <i>(SSCI)</i></li>
-        <li>Journal of Computer Assisted Learning <i>(SSCI)</i></li>
-        <li>Language and Education · Current Issues in Language Planning <i>(SSCI)</i></li>
-        <li>Education Sciences · Information <i>(ESCI/Scopus)</i></li>
-        <li>OJCMT · Contemporary Educational Technology · IJERE <i>(Scopus)</i></li>
-        <li>한국산학기술학회논문지 · 교육연구 · 문화와융합 <i>(KCI)</i></li>
+        <li>Journal of Multilingual and Multicultural Development</li>
+        <li>Journal of Computer Assisted Learning</li>
+        <li>Language and Education · Current Issues in Language Planning</li>
+        <li>Education Sciences · Information</li>
+        <li>Online Journal of Communication and Media Technologies · Contemporary Educational Technology · International Journal of Evaluation and Research in Education</li>
+        <li>한국산학기술학회논문지 · 교육연구 · 인공지능인문학연구</li>
       </ul></div>
     </div>
   </div>
@@ -378,35 +419,36 @@ footer{background:var(--dark);color:#8d97a3;padding:24px 30px;font-size:.79rem}
 <section id="contact">
   <div class="shead"><h2>연락</h2><p>Contact</p></div>
   <div class="box"><table>
-    <tr><th>소속</th><td>국립창원대학교<br>경남 창원시 의창구 창원대학로 20 (51140)</td></tr>
-    <tr><th>이메일</th><td><a href="mailto:fhlyongko@gmail.com">fhlyongko@gmail.com</a></td></tr>
-    <tr><th>ORCID</th><td><a href="https://orcid.org/0000-0001-8783-2237" target="_blank" rel="noopener">0000-0001-8783-2237</a></td></tr>
-    <tr><th>Scholar</th><td><a href="https://scholar.google.com/citations?user=Jzv1a7MAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar 프로필</a></td></tr>
+    <tr><th scope="row">소속</th><td>국립창원대학교<br>경남 창원시 의창구 창원대학로 20 (51140)</td></tr>
+    <tr><th scope="row">이메일</th><td><a href="mailto:fhlyongko@gmail.com">fhlyongko@gmail.com</a></td></tr>
+    <tr><th scope="row">ORCID</th><td><a href="https://orcid.org/0000-0001-8783-2237" target="_blank" rel="noopener">0000-0001-8783-2237</a></td></tr>
+    <tr><th scope="row">Scholar</th><td><a href="https://scholar.google.com/citations?user=Jzv1a7MAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar 프로필</a></td></tr>
   </table></div>
 </section>
 </main>
 
 <footer>
-  최종 갱신 2026년 8월 · 출판물은 Crossref/ORCID 기준, 예정 발표는 별도 표기
+  페이지 수정: 2026년 9월 7일 · 인용 수 저장일: 2026년 7월 31일 · 수록 논문과 학술대회 일정은 별도 구분
 </footer>
 </div>
 
 <script>
-let DATA=null,filt='all';
+let DATA={"meta":{"orcid":"0000-0001-8783-2237","source":"Crossref (ORCID 필터) 2026-07-31 확인","note":"Citation counts are a historical Crossref snapshot, not live Google Scholar metrics. Index labels in the source data have not been independently reverified and are not displayed.","scope":"2021년 이후 발표 논문만 수록","updated":"2026-09-07","citations_as_of":"2026-07-31"},"items":[{"y":2026,"t":"Email communication in English-medium instruction: Cultural and gender differences in student requests to professors","a":"Sung, S., Davis, R. O., Vincent, J., & Lee, Y.-J.","j":"Education Sciences","v":"16(1), 96","d":"10.3390/educsci16010096","idx":"ESCI/Scopus","c":0,"v_":"확인"},{"y":2026,"t":"Generative AI literacy among pre-service teachers: Focusing on physical education majors","a":"Lee, Y.-J., & Jeong, S.-H.","j":"Journal of Education and e-Learning Research","v":"13(2)","d":"10.20448/jeelr.v13i2.8661","idx":"Scopus","c":0,"v_":"확인"},{"y":2026,"t":"University students' perspectives on integrating generative AI into English language learning","a":"Lee, Y.-J., & Otani, M.","j":"International Journal of Evaluation and Research in Education","v":"15(1)","d":"10.11591/ijere.v15i1.35223","idx":"Scopus","c":0,"v_":"확인"},{"y":2026,"t":"Implementing AI-integrated English writing: University English language learners' writing strategies and perceptions","a":"Lee, Y.-J., & Jeong, S.-H.","j":"International Journal of Evaluation and Research in Education","v":"15(1)","d":"10.11591/ijere.v15i1.35461","idx":"Scopus","c":0,"v_":"확인"},{"y":2026,"t":"Understanding AI education perceptions and teaching efficacy among pre-service teachers in Korea","a":"Lee, Y.-J., & Jeong, S.-H.","j":"Journal of Education and Learning (EduLearn)","v":"20(3)","d":"10.11591/edulearn.v20i3.25169","idx":"Scopus","c":0,"v_":"확인"},{"y":2026,"t":"Examining artificial intelligence (AI) literacy among first-year students in Korean higher education","a":"Lee, Y.-J., & Jeong, S.-H.","j":"Journal of Curriculum and Teaching","v":"15(2), 284","d":"10.5430/jct.v15n2p284","idx":"Scopus","c":0,"v_":"확인"},{"y":2026,"t":"Exploring university ELLs' AI literacy: An exploratory descriptive study","a":"Lee, Y.-J., & Jeong, S.-H.","j":"Journal of Educational and Social Research","v":"16(1)","d":"10.36941/jesr-2026-0241","idx":"Scopus","c":1,"v_":"확인"},{"y":2026,"t":"Disciplinary differences in university students' AI adoption: A technology acceptance model approach","a":"Lee, Y.-J., & Choi, H.-C.","j":"International Journal of Information and Education Technology","v":"16(6)","d":"10.18178/ijiet.2026.16.6.2613","idx":"Scopus","c":0,"v_":"확인"},{"y":2026,"t":"Exploring AI literacy across academic disciplines: University students' knowledge, attitudes, and learning challenges","a":"Lee, Y.-J., & Choi, J.-I.","j":"Journal of the Korea Academia-Industrial Cooperation Society","v":"27(1), 495","d":"10.5762/kais.2026.27.1.495","idx":"KCI","c":0,"v_":"확인"},{"y":2025,"t":"Integrating generative AI into EFL writing: University students' strategies and perceptions","a":"Lee, Y.-J., Davis, R. O., & Choi, J.-I.","j":"Online Journal of Communication and Media Technologies","v":"15(4)","d":"10.30935/ojcmt/17545","idx":"Scopus","c":2,"v_":"확인"},{"y":2025,"t":"A multilingualism-as-resource approach in a graduate-level English-medium instruction (EMI) program at a Korean university","a":"Yilmaz, T., Li, S., & Lee, Y.-J.","j":"Journal of Multilingual and Multicultural Development","v":"46(9)","d":"10.1080/01434632.2024.2314659","idx":"Scopus","c":5,"v_":"확인"},{"y":2025,"t":"Assessing the impact of prior coding and artificial intelligence learning on non-computing majors' perception of AI in a university context","a":"Lee, Y.-J., & Davis, R. O.","j":"Information","v":"16(4), 277","d":"10.3390/info16040277","idx":"ESCI/Scopus","c":2,"v_":"확인"},{"y":2025,"t":"The exploration of combining hologram-like images and pedagogical agent gesturing","a":"Davis, R. O., Vincent, J., Yang, E. B., Lee, Y. J., & Lee, J. H.","j":"Information","v":"16(5), 350","d":"10.3390/info16050350","idx":"ESCI/Scopus","c":0,"v_":"확인"},{"y":2025,"t":"EFL university students' motivation, cognitive load, and satisfaction with using GenAI for English learning","a":"Lee, Y. J., & Otani, M.","j":"LLT Journal: A Journal on Language and Language Teaching","v":"28(2)","d":"10.24071/llt.v28i2.11518","idx":"Scopus","c":0,"v_":"확인"},{"y":2024,"t":"University students' perceptions of artificial intelligence-based tools for English writing courses","a":"Lee, Y.-J., Davis, R. O., & Lee, S. O.","j":"Online Journal of Communication and Media Technologies","v":"14(2)","d":"10.30935/ojcmt/14195","idx":"Scopus","c":40,"v_":"확인"},{"y":2024,"t":"Exploratory research on understanding university students' artificial intelligence literacy in a Korean university","a":"Lee, Y.-J., Oh, J., & Hong, C.","j":"Online Journal of Communication and Media Technologies","v":"14(3)","d":"10.30935/ojcmt/14711","idx":"Scopus","c":22,"v_":"확인"},{"y":2024,"t":"A case study of implementing generative AI in university's general English courses","a":"Lee, Y. J., & Davis, R. O.","j":"Contemporary Educational Technology","v":"16(4), ep533","d":"10.30935/cedtech/15218","idx":"Scopus","c":13,"v_":"확인"},{"y":2024,"t":"Exploring gesture frequencies and images in multimedia environments with pedagogical agents","a":"Davis, R. O., Lee, Y.-J., Vincent, J., & Wan, L.","j":"Journal of Computer Assisted Learning","v":"40(6)","d":"10.1111/jcal.13053","idx":"SSCI","c":8,"v_":"확인"},{"y":2024,"t":"Reimagining raciolinguistic ideologies through an analysis of localized language-in-education policies in Turkey and Korea","a":"Kim, H. J., Yilmaz, T., & Lee, Y.-J.","j":"Current Issues in Language Planning","v":"25(4)","d":"10.1080/14664208.2024.2315682","idx":"SSCI","c":2,"v_":"확인"},{"y":2024,"t":"Rethinking linguistic capitals and asset-based language learning: An examination of bilingual Korean-Chinese instruction for international students in South Korea","a":"Kim, H. J., Li, Y., & Lee, Y.-J.","j":"Language and Education","v":"38(2)","d":"10.1080/09500782.2023.2221221","idx":"SSCI","c":2,"v_":"확인"},{"y":2024,"t":"Exploring Korean university students' perceptions of artificial intelligence (AI) education","a":"Li, Y., & Lee, Y.-J.","j":"Journal of the Korea Academia-Industrial Cooperation Society","v":"25(3), 251","d":"10.5762/kais.2024.25.3.251","idx":"KCI","c":3,"v_":"확인"},{"y":2024,"t":"Case study on pre-service teachers' perception of AI education and AI teaching efficacy at a Chinese university","a":"Li, Y., & Lee, Y.-J.","j":"Journal of AI Humanities","v":"16","d":"10.46397/jaih.16.2","idx":"KCI","c":1,"v_":"확인"},{"y":2024,"t":"Prompt: ChatGPT, create my course, please!","a":"Davis, R. O., & Lee, Y. J.","j":"Education Sciences","v":"14(1), 24","d":"10.3390/educsci14010024","idx":"ESCI/Scopus","c":33,"v_":"확인"},{"y":2023,"t":"Pre-service teachers' self-efficacy beliefs in teaching refugee background students at Turkish public schools","a":"Yilmaz, T., & Lee, Y.-J.","j":"European Journal of Educational Research","v":"12(3), 1195","d":"10.12973/eu-jer.12.3.1195","idx":"Scopus","c":4,"v_":"확인"},{"y":2023,"t":"An exploratory study on international graduate students' experiences of English as a medium of instruction (EMI)","a":"Lee, Y.-J., & Kim, Y.","j":"Journal of the Korea Academia-Industrial Cooperation Society","v":"24(5), 81","d":"10.5762/kais.2023.24.5.81","idx":"KCI","c":1,"v_":"확인"},{"y":2022,"t":"Exploring flipped learning experience of pre-service teachers: Focusing on teaching methods and educational technology courses","a":"Li, Y., & Lee, Y.-J.","j":"Journal of the Korea Academia-Industrial Cooperation Society","v":"23(5), 460","d":"10.5762/kais.2022.23.5.460","idx":"KCI","c":1,"v_":"확인"},{"y":2022,"t":"Exploratory research on bilingual Korean classes for international students: Focusing on beginner level of Korean language learners in a Korean university","a":"Li, Y., & Lee, Y.-J.","j":"교육연구 (Educational Research Institute)","v":"42(1), 43","d":"10.34245/jed.42.1.43","idx":"KCI","c":0,"v_":"확인"},{"y":2021,"t":"International graduate students' experiences of English as a medium of instruction (EMI) courses in a Korean university","a":"Lee, Y.-J., Davis, R. O., & Li, Y.","j":"International Journal of Learning, Teaching and Educational Research","v":"20(9)","d":"10.26803/ijlter.20.9.3","idx":"Scopus","c":13,"v_":"확인"}]},filt='all';
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const grp=i=>i==='SSCI'?'ssci':i.includes('ESCI')?'scopus':i==='KCI'?'kci':'scopus';
-const short=i=>i==='SSCI'?'SSCI':i.includes('ESCI')?'ESCI':i==='KCI'?'KCI':'SCOPUS';
+const grp=i=>i==='KCI'?'kci':'intl';
+const short=i=>i==='KCI'?'국내':'국제';
 
 function chart(){
   const it=DATA.items, n=it.length;
-  const cnt={SSCI:0,ESCI:0,SCOPUS:0,KCI:0};
-  it.forEach(p=>cnt[short(p.idx)]++);
+  const domestic=it.filter(p=>p.idx==='KCI').length;
+  document.querySelectorAll('[data-count]').forEach(el=>{el.textContent=el.dataset.count==='all'?n:n-domestic});
+  document.querySelector('[data-f="all"]').textContent='전체 '+n;
+  document.querySelector('[data-f="intl"]').textContent='국제 '+(n-domestic);
+  document.querySelector('[data-f="kci"]').textContent='국내 '+domestic;
   document.getElementById('cstat').innerHTML=
-    `<div style="border-left-color:var(--blue)"><b>${n}</b><span>TOTAL</span></div>`+
-    `<div style="border-left-color:var(--ssci)"><b>${cnt.SSCI}</b><span>SSCI 확인</span></div>`+
-    `<div style="border-left-color:var(--scopus)"><b>${cnt.ESCI}</b><span>ESCI/Scopus</span></div>`+
-    `<div style="border-left-color:var(--scopus)"><b>${cnt.SCOPUS}</b><span>SCOPUS</span></div>`+
-    `<div style="border-left-color:var(--kci)"><b>${cnt.KCI}</b><span>KCI</span></div>`;
+    '<div><b>'+n+'</b><span>수록 논문</span></div>'+
+    '<div><b>'+(n-domestic)+'</b><span>국제 학술지</span></div>'+
+    '<div><b>'+domestic+'</b><span>국내 학술지</span></div>';
   const by={}; it.forEach(p=>by[p.y]=(by[p.y]||0)+1);
   const ys=Object.keys(by).map(Number).sort((a,b)=>b-a), mx=Math.max(...Object.values(by));
   document.getElementById('cbars').innerHTML=ys.map(y=>{
@@ -433,13 +475,13 @@ function render(){
 function row(p){
   const au=esc(p.a).replace(/(Lee,\s*Y[\.\-\s]*J[\.]?)/g,'<b>$1</b>');
   return `<div class="pub"><span class="ix ${grp(p.idx)}">${short(p.idx)}</span><div>
-    <div class="cit">${au} (${p.y}). ${esc(p.t)}. <i>${esc(p.j)}</i>${p.v?', '+esc(p.v):''}.</div>
+    <div class="cit">${au} (${p.y}). ${esc(p.t)}${/[.!?]$/.test(p.t)?'':'.'} <i>${esc(p.j)}</i>${p.v?', '+esc(p.v):''}.</div>
     <div class="ex">${p.d?`<a href="https://doi.org/${esc(p.d)}" target="_blank" rel="noopener">DOI ${esc(p.d)}</a>`:''}
-    ${p.c>0?`<span class="cn">인용 ${p.c}</span>`:''}</div></div></div>`;
+    ${p.c>0?`<span class="cn">Crossref 인용 ${p.c} (2026-07-31)</span>`:''}</div></div></div>`;
 }
 document.querySelectorAll('.filt button').forEach(b=>b.onclick=()=>{
-  document.querySelectorAll('.filt button').forEach(x=>x.classList.remove('on'));
-  b.classList.add('on');filt=b.dataset.f;render();
+  document.querySelectorAll('.filt button').forEach(x=>{x.classList.remove('on');x.setAttribute('aria-pressed','false')});
+  b.classList.add('on');b.setAttribute('aria-pressed','true');filt=b.dataset.f;render();
 });
 const rails=[...document.querySelectorAll('.rail a')];
 addEventListener('scroll',()=>{
@@ -448,9 +490,10 @@ addEventListener('scroll',()=>{
     if(el&&el.getBoundingClientRect().top<180)cur=a});
   rails.forEach(a=>a.classList.toggle('on',a===cur));
 },{passive:true});
-fetch('publications.json').then(r=>r.json()).then(d=>{DATA=d;chart();render()})
-  .catch(()=>{document.getElementById('publist').innerHTML=
-    '<p style="color:var(--mute)">논문 목록을 불러오지 못했습니다.</p>'});
+chart();render();
+let previousFilter;
+addEventListener('beforeprint',()=>{previousFilter=filt;filt='all';render()});
+addEventListener('afterprint',()=>{filt=previousFilter||'all';render()});
 </script>
 </body>
 </html>
