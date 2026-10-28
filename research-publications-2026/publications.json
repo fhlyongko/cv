@@ -2,7 +2,7 @@
   {
     "id": 1,
     "year": 2017,
-    "type": "Research article",
+    "type": "Publication",
     "title": "Literature Review of Microteaching Activity in Teacher Education Programs: Focusing on Pre-service Teachers’ Self-efficacy Beliefs",
     "journal": "Culture and Convergence",
     "volume": "39(4), 203–222",
@@ -13,7 +13,7 @@
   {
     "id": 2,
     "year": 2018,
-    "type": "Research article",
+    "type": "Publication",
     "title": "Can Flipped Learning Benefit English Language Teaching ESL Teacher Education: What Do We Know, and Where Do We Go?",
     "journal": "Culture and Convergence",
     "volume": "40(2), 673–702",
@@ -24,7 +24,7 @@
   {
     "id": 3,
     "year": 2019,
-    "type": "Research article",
+    "type": "Publication",
     "title": "Pre-service Teachers’ Self-efficacy through ESL Microteaching Experiences in a US Teacher Education Program",
     "journal": "Secondary English Education",
     "volume": "12(1), 153–173",
@@ -35,7 +35,7 @@
   {
     "id": 4,
     "year": 2019,
-    "type": "Research article",
+    "type": "Publication",
     "title": "Elementary Preservice Teachers’ ESL Field Experiences to Teach English Language Learners in the US",
     "journal": "English Language Teaching",
     "volume": "31(2), 43–57",
@@ -46,7 +46,7 @@
   {
     "id": 5,
     "year": 2020,
-    "type": "Research article",
+    "type": "Publication",
     "title": "The Effect of a Short-Term Professional Development on K-12 Korean English Teachers’ Self-efficacy to Implement Communicative Language Teaching: A Mixed-Methods Study",
     "journal": "MEXTESOL Journal",
     "volume": "44(1)",
@@ -57,7 +57,7 @@
   {
     "id": 6,
     "year": 2020,
-    "type": "Research article",
+    "type": "Publication",
     "title": "University ELLs’ Perceptions, Evaluations, and Satisfaction with EMI Courses in Korea: Focusing on Communicative Language Teaching (CLT) and the Grammar-Translation Method (GTM)",
     "journal": "Journal of Asia TEFL",
     "volume": "17(3), 1068–1076",
@@ -68,7 +68,7 @@
   {
     "id": 7,
     "year": 2021,
-    "type": "Research article",
+    "type": "Publication",
     "title": "The effects of virtual human gesture frequency and reduced video speed on satisfaction and learning outcomes",
     "journal": "Educational Technology Research and Development",
     "volume": "69, 2331–2352",
@@ -79,29 +79,29 @@
   {
     "id": 8,
     "year": 2021,
-    "type": "Research article",
+    "type": "Publication",
     "title": "Chinese International Graduate Students’ Perceptions of English as a Medium of Instruction (EMI) Courses at a Korean University",
     "journal": "Journal of Asia TEFL",
     "volume": "18(3), 995–1002",
     "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002765653",
-    "note": "This is a separate publication from record 9.",
+    "note": "Distinct from “International Graduate Students’ Experiences of English as a Medium of Instruction (EMI) Courses in a Korean University” (2021).",
     "theme": "EMI & International Education"
   },
   {
     "id": 9,
     "year": 2021,
-    "type": "Research article",
+    "type": "Publication",
     "title": "International Graduate Students’ Experiences of English as a Medium of Instruction (EMI) Courses in a Korean University",
     "journal": "International Journal of Learning, Teaching and Educational Research",
-    "volume": "20(9)",
-    "url": "https://ijlter.net/index.php/ijlter/article/view/22",
-    "note": "This is a separate publication from record 8.",
+    "volume": "20(9), 38–51",
+    "url": "https://www.ijlter.org/index.php/ijlter/article/view/4004",
+    "note": "Distinct from “Chinese International Graduate Students’ Perceptions of English as a Medium of Instruction (EMI) Courses at a Korean University” (2021).",
     "theme": "EMI & International Education"
   },
   {
     "id": 10,
     "year": 2022,
-    "type": "Research article",
+    "type": "Publication",
     "title": "Implementing Synchronous Online Flipped Learning for Pre-service Teachers During COVID-19",
     "journal": "European Journal of Educational Research",
     "volume": "11(2), 653–661",
@@ -112,7 +112,7 @@
   {
     "id": 11,
     "year": 2022,
-    "type": "Research article",
+    "type": "Publication",
     "title": "English Teachers’ Experiences of Participating in a Long-Term Professional Development for Teaching English through English",
     "journal": "MEXTESOL Journal",
     "volume": "46(2)",
@@ -123,7 +123,7 @@
   {
     "id": 12,
     "year": 2023,
-    "type": "Research article",
+    "type": "Publication",
     "title": "International Students’ Satisfaction with Online Learning during the COVID-19 at a South Korean University",
     "journal": "International Journal of Learning, Teaching and Educational Research",
     "volume": "22(3), 19–32",
@@ -134,10 +134,10 @@
   {
     "id": 13,
     "year": 2023,
-    "type": "Research article",
+    "type": "Publication",
     "title": "Korean Pre-service Teachers’ Self-efficacy with Online Micro-Teaching Activities in a Teacher Education Program",
     "journal": "International Journal of Instruction",
-    "volume": "16(4)",
+    "volume": "16(4), 71–86",
     "url": "https://e-iji.net/ats/index.php/pub/article/view/7",
     "note": null,
     "theme": "Teacher Education"
@@ -145,7 +145,7 @@
   {
     "id": 14,
     "year": 2023,
-    "type": "Research article",
+    "type": "Publication",
     "title": "Preservice Teachers’ Self-Efficacy through Hybrid Field Practicum in a Korean Teacher Education Program",
     "journal": "International Journal of Instruction",
     "volume": "16(4), 349–366",
@@ -156,7 +156,7 @@
   {
     "id": 15,
     "year": 2024,
-    "type": "Research article",
+    "type": "Publication",
     "title": "Prompt: ChatGPT, Create My Course, Please!",
     "journal": "Education Sciences",
     "volume": "14(1), 24",
@@ -167,7 +167,7 @@
   {
     "id": 16,
     "year": 2024,
-    "type": "Research article",
+    "type": "Publication",
     "title": "University students’ perceptions of artificial intelligence-based tools for English writing courses",
     "journal": "Online Journal of Communication and Media Technologies",
     "volume": "14(1), e202412",
@@ -178,7 +178,7 @@
   {
     "id": 17,
     "year": 2024,
-    "type": "Research article",
+    "type": "Publication",
     "title": "Korean in-Service Teachers’ Perceptions of Implementing Artificial Intelligence (AI) Education for Teaching in Schools and Their AI Teacher Training Programs",
     "journal": "International Journal of Information and Education Technology",
     "volume": "14(2), 214–219",
@@ -189,40 +189,40 @@
   {
     "id": 18,
     "year": 2024,
-    "type": "Research article",
+    "type": "Publication",
     "title": "A case study of implementing ChatGPT for university’s general English courses: Focusing on English language learners’ self-regulated learning and grit",
     "journal": "Secondary English Education",
     "volume": "17(3), 73–87",
     "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003089979",
-    "note": "This is a separate publication from record 20.",
+    "note": "Distinct from “A case study of implementing generative AI in university’s general English courses” (2024).",
     "theme": "AI & English Learning"
   },
   {
     "id": 19,
     "year": 2024,
-    "type": "Research article",
+    "type": "Publication",
     "title": "Exploring gesture frequencies and images in multimedia environments with pedagogical agents",
     "journal": "Journal of Computer Assisted Learning",
-    "volume": "Volume, issue, and pagination not supplied",
+    "volume": "40(6), 3055–3071",
     "url": "https://doi.org/10.1111/jcal.13053",
-    "note": "The DOI is reproduced from the supplied source, which attributes it to an earlier search. Volume, issue, and page details were not supplied and have not been inferred.",
+    "note": "Volume, issue, and pages checked against the Wiley publisher record on 29 October 2026.",
     "theme": "Multimedia Learning"
   },
   {
     "id": 20,
     "year": 2024,
-    "type": "Research article",
+    "type": "Publication",
     "title": "A case study of implementing generative AI in university’s general English courses",
     "journal": "Contemporary Educational Technology",
     "volume": "16(4), ep533",
     "url": "https://doi.org/10.30935/cedtech/15218",
-    "note": "This is a separate publication from record 18.",
+    "note": "Distinct from “A case study of implementing ChatGPT for university’s general English courses: Focusing on English language learners’ self-regulated learning and grit” (2024).",
     "theme": "AI & English Learning"
   },
   {
     "id": 21,
     "year": 2025,
-    "type": "Research article",
+    "type": "Publication",
     "title": "Assessing the Impact of Prior Coding and Artificial Intelligence Learning on Non-Computing Majors’ Perception of AI in a University Context",
     "journal": "Information",
     "volume": "16(4), 277",
@@ -233,10 +233,10 @@
   {
     "id": 22,
     "year": 2025,
-    "type": "Research article",
+    "type": "Publication",
     "title": "Revisiting contextual relevance: pedagogical agent appearance",
     "journal": "Journal of Research on Technology in Education",
-    "volume": "57(3)",
+    "volume": "57(3), 627–643",
     "url": "https://doi.org/10.1080/15391523.2023.2288233",
     "note": "First published online in 2023 and assigned to a 2025 journal issue. Counted as one article under the issue publication year.",
     "theme": "Multimedia Learning"
@@ -244,7 +244,7 @@
   {
     "id": 23,
     "year": 2025,
-    "type": "Research article",
+    "type": "Publication",
     "title": "Integrating generative AI into EFL writing: University students’ strategies and perceptions",
     "journal": "Online Journal of Communication and Media Technologies",
     "volume": "15(4), e202541",
@@ -255,7 +255,7 @@
   {
     "id": 24,
     "year": 2026,
-    "type": "Research article",
+    "type": "Publication",
     "title": "Email Communication in English-Medium Instruction: Cultural and Gender Differences in Student Requests to Professors",
     "journal": "Education Sciences",
     "volume": "16(1), 96",
@@ -266,7 +266,7 @@
   {
     "id": 25,
     "year": 2026,
-    "type": "Research article",
+    "type": "Publication",
     "title": "Integrating Generative AI into English Learning: Insights from Korean University EFL Students",
     "journal": "Journal of Asia TEFL",
     "volume": "23(1), 128–137",
@@ -277,7 +277,7 @@
   {
     "id": 26,
     "year": 2026,
-    "type": "Research article",
+    "type": "Publication",
     "title": "Cognitive Load and Working Memory in Multimedia Video Podcasts: Effects of Elaborative and Seductive Details",
     "journal": "Journal of Intelligence",
     "volume": "14(5), 74",
